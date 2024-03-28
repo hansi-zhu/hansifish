@@ -1,0 +1,217 @@
+body{
+    background-color: whitesmoke;
+}
+@font-face {
+    font-family: heading;
+    src: url('fonts/Hysterix-8Wg2.ttf');
+}
+
+@font-face {
+    font-family: subheading;
+    src: url('fonts/Gatometrix-A67x.otf');
+}
+
+@font-face {
+    font-family: location;
+    src: url('fonts/airstrike.ttf');
+}
+
+@font-face {
+    font-family: week;
+    src: url('fonts/Gatometrix-A67x.otf');
+}
+
+@font-face {
+    font-family: body;
+    src: url('fonts/Gatometrix-A67x.otf');
+}
+
+h1{
+    font-size: 4.8vw;
+    font-family:heading;
+    color:white;
+    text-align:center;
+    animation:fadeIn 2s;
+    margin-bottom: 0.2;
+    margin-top:4;
+    text-shadow: red 0px 5px;
+}
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+h2{
+    font-size:2vw;
+    font-family: 'week';
+    border:red solid 3px;
+    border-radius:10px;
+}
+
+p{
+    font-family: monospace;
+    font-size:1.2vw;
+}
+
+li{
+    font-family:monospace;
+}
+
+code{
+    font-size:1.2vw;
+}
+
+a{
+    color:rgb(239, 239, 239);
+}
+
+mark{
+    background-color:white;
+}
+
+.wrapper{
+    background-image:linear-gradient(blue 0%, rgb(6, 0, 110) 35%, black 100%);
+    border-radius:20pt;
+    border: solid whitesmoke 3pt;
+}
+
+.semester{
+    font-family: heading;
+    font-size:2vw;
+    letter-spacing: 2vw;
+    text-align: center;
+    opacity: .85;
+    margin-top:0;
+    color:#f9f9f9;
+    text-shadow: rgb(96, 96, 96) 0px 5px;
+    animation:fadeIn 3s;
+}
+
+.location{
+    text-align:center;
+    margin-left:30vw;
+    margin-right:30vw;
+    padding:0.5vw;
+    font-family: location;
+    font-size:1.2vw;
+    color:rgb(237,255,182);
+    letter-spacing:2pt;
+    animation:flyIn 0.5s, fadeIn 2s;
+}
+
+.welcome{
+    border-radius:20pt;
+    margin:2vw;
+    padding:1vw;
+    background-color: rgb(10, 0, 77);
+    color: rgb(237,255,182);
+    border: rgb(243, 255, 205) solid 4pt;
+    box-shadow: 0 0 50px 15px #587ad9;
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-top: 5px;
+}
+
+.quote{
+    text-align:center;
+    margin-top:5vh;
+    margin-left:20vw;
+    margin-right:20vw;
+    border:5px solid rgb(27, 183, 186);
+    background:lime;
+    padding: 2vw;
+    border-radius:20pt;
+    background-size: 0% 100%;
+    transition:background-size 1s, background-color 1s;
+}
+
+.quote:hover{
+    background-image:linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255, 255, 255, 0.675) 40%, rgba(59, 59, 59, 0.447) 100%);
+
+}
+
+textarea{
+    font-family:heading;
+    font-size:2vw;
+    padding-left:1vw;
+    padding-right:1vw;
+    width:50vw;
+    height:44px;
+    text-align: center;
+    background-color:rgb(221, 221, 221);
+    transition: background-color .5s;
+    border: 5px solid rgb(0, 152, 142);
+    border-radius:10pt;
+}
+
+textarea:hover{
+    background-color:rgb(248, 253, 255);
+    background-image:linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255, 255, 255, 0.675) 40%, rgba(255,255,0,.7) 100%);
+    background-repeat:no-repeat;
+    background-size: 200% 100%; 
+    transition:background-size 1s, background-color 1s;
+}
+.syllabus{
+    text-align:center;
+}
+button{
+    font-family:heading;
+    font-size:2vw;
+    padding-left:1vw;
+    padding-right:1vw;
+    width:50vw;
+    height:20vh;
+    text-align: center;
+    border-radius:20pt;
+    border:3pt solid white;
+    background-color: rgb(237,255,182);
+    transition: background-color .5s;
+}
+
+button:hover{
+    background-color:rgb(21, 21, 255);
+    background-image:linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 40%, rgba(255,255,255,.7) 100%);
+    background-repeat:no-repeat;
+    background-size: 200% 100%; 
+    transition:background-size 1s, background-color 1s;
+}
+
+.week{
+    border-radius:20pt;
+    margin:20;
+    padding:1vw;
+    background-color: rgb(205,233,238);
+    box-shadow: 0 0 50px 15px #587ad9;
+    animation-name: side2side;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    width:26vw;
+    float:left;
+    display:grid;
+    grid-template-columns: 1 2;
+
+}
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 15px); }
+    100%   { transform: translate(0, -0px); }    
+}
+
+@keyframes side2side {
+    0% { transform: translate(-20px,  0px); }
+    50%  { transform: translate(15px, 0px); }
+    100%   { transform: translate(-20px, 0px); }    
+}
+
+@keyframes flyIn {
+    0% { transform: translate(-50vw,  0px); }
+    30% { transform: translate(-50vw,  0px); }
+    100%   { transform: translate(0px, 0px); }    
+}
+
+ul {
+    list-style-type: square;
+  }

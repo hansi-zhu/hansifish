@@ -1,0 +1,100 @@
+*{
+    margin:0;
+    font-family: sans-serif;
+}
+h1{
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size:72pt;
+    background-color: rgb(199, 139, 255);
+    color:white;
+}
+.wrapper {
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+  }
+ 
+  div{
+    scroll-snap-align:start;
+  }
+
+  h2{
+    font-size: 72pt;
+    font-family: sans-serif;
+    font-weight: 500;
+    margin:2vh;
+  }
+
+  h3{
+    font-size: 30pt;
+    font-family: sans-serif;
+    font-weight: 500;
+    margin:2vh;
+  }
+
+ul{
+    font-family: sans-serif;
+    font-size: 16pt;
+}
+
+a:visited{
+    text-decoration: none;
+}
+a{
+    text-decoration: black underline;
+    color: black;
+}
+p{
+    font-family: sans-serif;
+}
+.semester {
+    position: absolute; 
+    width: 29vw;
+    right:2vh;   
+    top:30vh;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.location {
+    position: fixed; 
+    width: 29vw;
+    right:2vh;
+    top:33vh;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+big{
+    position: fixed; 
+    width: 29vw;
+    right:2vh;
+    top:20vh;
+    font-size:16px;
+    font-weight: 300;
+}
+
+.quote {
+    position: fixed; 
+    width: 29vw;
+    right:2vh;
+    top:40vh;
+}
+
+.syllabus{
+    position: fixed; 
+    width: 29vw;
+    right:2vh;
+    top:47vh;
+}
+
+.welcome{
+    position: fixed; 
+    width: 29vw;
+    right:2vh;
+    top:4.5vh;
+}
+.footer{
+    margin:2vh;
+}
